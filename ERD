@@ -1,0 +1,11 @@
+ERD (Entity-Relationship Diagram):
+
+Entities:
+Energy_Sources (Source_ID, Source_Name, Type, Cost_Per_KWh)
+Households (Household_ID, Location, Energy_Consumption, Income_Level)
+Energy_Providers (Provider_ID, Provider_Name, Area_Covered)
+Energy_Access (Access_ID, Household_ID, Provider_ID, Source_ID, Access_Date)
+Relationships:
+Households are provided energy by Energy_Providers.
+Energy_Providers offer various Energy_Sources.
+Households have records of energy access.
